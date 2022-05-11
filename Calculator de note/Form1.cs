@@ -1,3 +1,4 @@
+using System.Data.SqlClient;
 using System.Text;
 
 namespace Calculator_de_note
@@ -8,6 +9,7 @@ namespace Calculator_de_note
         {
             InitializeComponent();
         }
+        string connectionString = "Server=.;Database=carnetNote;Trusted_Connection=True;";
 
         private void calculate_Click(object sender, EventArgs e)
         {
@@ -127,6 +129,41 @@ namespace Calculator_de_note
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             pictureBox1.Cursor = Cursors.Hand;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double romana, matem, lstraina, istoria, fizica, informatica, geografia, chimia, biologia;
+
+            romana = double.Parse(lromGrade.Text);
+            matem = double.Parse(mathGrade.Text);
+            lstraina = double.Parse(langGrade.Text);
+            istoria = double.Parse(historyGrade.Text);
+            fizica = double.Parse(fizicaGrade.Text);
+            informatica = double.Parse(informaticaNota.Text);
+            geografia = double.Parse(geografiaNota.Text);
+            chimia = double.Parse(chimiaGrade.Text);
+            biologia = double.Parse(biologiaGrade.Text);
+              
+            String notaMedie = gradeText.Text;
+            double nm = Convert.ToDouble(notaMedie);
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand last = new SqlCommand("SELECT TOP 1 idElev FROM elev ORDER BY idElev DESC", connection);
+                
+                int idElev;
+                connection.Open();
+                idElev = Convert.ToInt32(last.ExecuteScalar());
+                connection.Close();
+
+                SqlCommand cmd = new SqlCommand($"insert into noteReal(idElev, romana, matematica, straina, istoria, fizica, biologia, chimia, informatica, geografia, notaMedie) values({idElev}, {romana}, {matem}, {lstraina}, {istoria}, {fizica}, {informatica}, {geografia}, {chimia}, {biologia}, {nm})", connection);
+                
+                connection.Open();
+                cmd.ExecuteNonQuery();
+                connection.Close();
+            }
+            MessageBox.Show("Datele au fost exportate cu succes");
         }
     }
 }

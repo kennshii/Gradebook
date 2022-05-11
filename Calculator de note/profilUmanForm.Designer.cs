@@ -57,6 +57,7 @@
             this.exportButton = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -321,11 +322,22 @@
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(318, 235);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 29);
+            this.button1.TabIndex = 69;
+            this.button1.Text = "Export to db";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // ProfilUmanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 370);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.exportButton);
@@ -396,5 +408,6 @@
         private Button exportButton;
         private DateTimePicker dateTimePicker1;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }

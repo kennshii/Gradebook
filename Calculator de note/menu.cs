@@ -2,18 +2,23 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+
 namespace Calculator_de_note
 {
     public partial class StartForm : Form
     {
-        public String numeStud;
-        public String clasa;
+        string connectionString = "Server=.;Database=carnetNote;Trusted_Connection=True;";
+        String numeStud;
+        String clasa;
 
         public StartForm()
         {
@@ -41,8 +46,9 @@ namespace Calculator_de_note
             } else
             {
                 
-                //Crearea file pentru student
-                FileStream fs = null;
+                ////Crearea file pentru student
+                //FileStream fs = null;
+                
                 String profil;
                 if(realButton.Checked)
                 {
@@ -52,21 +58,28 @@ namespace Calculator_de_note
                     profil = "Uman";
                 }
 
-                try
-                {
-                    fs = new FileStream("student.txt", FileMode.Create);
-                    byte[] input = Encoding.Default.GetBytes("Nume: " + numeStud + "\n" + "Clasa: " + clasa + "\n"
-                        + "Profil: " + profil + "\n\n");
-                    fs.Write(input, 0, input.Length);
+                //try
+                //{
+                //    //fs = new FileStream("student.txt", FileMode.Create);
+                //    //byte[] input = Encoding.Default.GetBytes("Nume: " + numeStud + "\n" + "Clasa: " + clasa + "\n"
+                //    //    + "Profil: " + profil + "\n\n");
+                //    //fs.Write(input, 0, input.Length);
 
-                }
-                finally
-                {
-                    fs.Close();
-                }
-
+                //}
+                //finally
+                //{
+                //    fs.Close();
+                //}
+                  
                 if (realButton.Checked)
                 {
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        SqlCommand cmd = new SqlCommand($"insert into elev(numeElev, clasa, profil) values('{numeStud}', {clasa}, '{profil.ToUpper()}')", connection);
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                        connection.Close();
+                    }
                     ProfilRealForm mForm = new ProfilRealForm();
                     this.Hide();
                     mForm.ShowDialog();
@@ -75,21 +88,46 @@ namespace Calculator_de_note
 
                 if (umanButton.Checked)
                 {
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        SqlCommand cmd = new SqlCommand($"insert into elev(numeElev, clasa, profil) values('{numeStud}', {clasa}, '{profil.ToUpper()}')", connection);
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                        connection.Close();
+                    }
                     ProfilUmanForm uForm = new ProfilUmanForm();
                     this.Hide();
                     uForm.ShowDialog();
                     this.Close();
                 }
+
+     
             }
-
-
 
         }
 
-
         private void linkGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("cmd", "/c start http://www.google.com");
+            System.Diagnostics.Process.Start("cmd", "/c start https://github.com/kennshii");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            chooseForm start = new chooseForm();
+            this.Hide();
+            start.ShowDialog();
+            this.Close();
         }
     }
 }

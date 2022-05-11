@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace Calculator_de_note
 {
     public partial class ProfilUmanForm : Form
     {
+        string connectionString = "Server=.;Database=carnetNote;Trusted_Connection=True;";
+
         public ProfilUmanForm()
         {
             InitializeComponent();
@@ -148,6 +151,44 @@ namespace Calculator_de_note
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
             pictureBox1.Cursor = Cursors.Hand;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            double romana, matem, lstraina, istoria, informatica, geografia, biologia, lstraina2, civica, litUniversala;
+
+
+            String notaMedie = gradeText.Text;
+            double nm = Convert.ToDouble(notaMedie);
+
+                romana = double.Parse(lromGrade.Text);
+                matem = double.Parse(mathGrade.Text);
+                lstraina = double.Parse(langGrade.Text);
+                istoria = double.Parse(historyGrade.Text);
+                informatica = double.Parse(informaticaNota.Text);
+                geografia = double.Parse(geografiaNota.Text);
+                biologia = double.Parse(biologiaGrade.Text);
+                lstraina2 = double.Parse(lang2Grade.Text);
+                civica = double.Parse(civicaGrade.Text);
+                litUniversala = double.Parse(litUniversalaGrade.Text);
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand last = new SqlCommand("SELECT TOP 1 idElev FROM elev ORDER BY idElev DESC", connection);
+
+
+                int idElev;
+                connection.Open();
+                idElev = Convert.ToInt32(last.ExecuteScalar());
+                connection.Close();
+
+                SqlCommand cmd = new SqlCommand($"insert into noteUman(idElev, romana, matematica, straina, istoria, informatica, biologia, straina2, civica, geografia, notaMedie) values({idElev}, {romana}, {matem}, {lstraina}, {istoria}, {informatica}, {biologia}, {lstraina2}, {civica}, {geografia}, {nm})", connection);
+
+                connection.Open();
+                cmd.ExecuteNonQuery();
+                connection.Close();
+
+            }
         }
     }
 }

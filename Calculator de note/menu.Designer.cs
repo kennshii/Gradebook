@@ -38,9 +38,7 @@
             this.realButton = new System.Windows.Forms.RadioButton();
             this.umanButton = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.linkGitHub = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +96,7 @@
             // 
             // logButton
             // 
-            this.logButton.Location = new System.Drawing.Point(119, 199);
+            this.logButton.Location = new System.Drawing.Point(117, 199);
             this.logButton.Name = "logButton";
             this.logButton.Size = new System.Drawing.Size(118, 42);
             this.logButton.TabIndex = 16;
@@ -138,46 +136,24 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "PROFIL:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(11, 319);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 25);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Cread de Busuioc Eduard";
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Calculator_de_note.Properties.Resources.ceiti;
-            this.pictureBox1.Location = new System.Drawing.Point(241, 299);
+            this.pictureBox1.Image = global::Calculator_de_note.Properties.Resources.back_png_background_Transparent_Images;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 266);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(43, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
-            // 
-            // linkGitHub
-            // 
-            this.linkGitHub.AutoSize = true;
-            this.linkGitHub.Location = new System.Drawing.Point(12, 344);
-            this.linkGitHub.Name = "linkGitHub";
-            this.linkGitHub.Size = new System.Drawing.Size(61, 20);
-            this.linkGitHub.TabIndex = 24;
-            this.linkGitHub.TabStop = true;
-            this.linkGitHub.Text = "GITHUB";
-            this.linkGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkGitHub_LinkClicked);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(378, 373);
-            this.Controls.Add(this.linkGitHub);
+            this.ClientSize = new System.Drawing.Size(378, 318);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.umanButton);
             this.Controls.Add(this.realButton);
@@ -209,8 +185,6 @@
         private RadioButton realButton;
         private RadioButton umanButton;
         private Label label3;
-        private Label label4;
         private PictureBox pictureBox1;
-        private LinkLabel linkGitHub;
     }
 }
