@@ -1,0 +1,17 @@
+Nume: a
+Clasa: a
+Profil: Real
+
+Limba romana: 9
+Matematica: 9
+Limba straina: 9
+Istoria: 9
+Fizica: 9
+Informatica: 9
+Geografia: 9
+Chimia: 9
+Biologia: 10
+
+Nota medie: 9.11
+
+Data exportarii: 2022-03-04

@@ -1,0 +1,5 @@
+C:\Users\manbl\source\repos\Calculator de note\Calculator de note\bin\Release\net6.0-windows\publish\Calculator de note.exe
+C:\Users\manbl\source\repos\Calculator de note\Calculator de note\bin\Release\net6.0-windows\publish\Calculator de note.dll
+C:\Users\manbl\source\repos\Calculator de note\Calculator de note\bin\Release\net6.0-windows\publish\Calculator de note.deps.json
+C:\Users\manbl\source\repos\Calculator de note\Calculator de note\bin\Release\net6.0-windows\publish\Calculator de note.runtimeconfig.json
+C:\Users\manbl\source\repos\Calculator de note\Calculator de note\bin\Release\net6.0-windows\publish\Calculator de note.pdb
