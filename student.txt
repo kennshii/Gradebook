@@ -1,0 +1,22 @@
+L/T Alexandru Donici 
+Fisa personala:
+
+Nume: Kolea Bomj
+Clasa: 12
+Profil: Uman
+
+Limba romana: 10
+Matematica: 9
+Limba straina: 8
+Istoria: 9
+Informatica: 9
+Geografia: 9
+Biologia: 9.85
+Limba straina(2): 10
+Educatia civica: 9.85
+
+Nota medie: 8.6
+
+Data: 2022-05-16
+
+Semnatura: __________________

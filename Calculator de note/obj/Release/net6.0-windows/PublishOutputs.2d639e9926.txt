@@ -1,0 +1,11 @@
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\Calculator de note.exe
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\Calculator de note.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\Calculator de note.deps.json
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\Calculator de note.runtimeconfig.json
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\Calculator de note.pdb
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\System.Data.SqlClient.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\runtimes\win-arm64\native\sni.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\runtimes\win-x64\native\sni.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\runtimes\win-x86\native\sni.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Gradebook beta v.01\GB\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

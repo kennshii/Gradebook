@@ -1,0 +1,6 @@
+L/T Alexandru Donici 
+Fisa personala: 
+
+idElev  numeElev    profil  romana  matematica  straina  istoria  informatica  biologia  straina2  civica  geografia  notaMedie  
+50      Kolea Bomj  UMAN    10.00   9.00        8.00     9.00     9.00         9.85      10.00     8.00    9.00       8.60000    
+                                                                                                                                 

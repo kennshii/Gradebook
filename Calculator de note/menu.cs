@@ -17,13 +17,12 @@ namespace Calculator_de_note
     public partial class StartForm : Form
     {
         string connectionString = "Server=.;Database=carnetNote;Trusted_Connection=True;";
-        String numeStud;
-        String clasa;
+        static String numeStud;
+        static String clasa;
 
         public StartForm()
         {
             InitializeComponent();
-
         }
 
         private void logButton_Click(object sender, EventArgs e)
@@ -46,8 +45,8 @@ namespace Calculator_de_note
             } else
             {
                 
-                ////Crearea file pentru student
-                //FileStream fs = null;
+                //Crearea file pentru student
+                FileStream fs = null;
                 
                 String profil;
                 if(realButton.Checked)
@@ -58,18 +57,19 @@ namespace Calculator_de_note
                     profil = "Uman";
                 }
 
-                //try
-                //{
-                //    //fs = new FileStream("student.txt", FileMode.Create);
-                //    //byte[] input = Encoding.Default.GetBytes("Nume: " + numeStud + "\n" + "Clasa: " + clasa + "\n"
-                //    //    + "Profil: " + profil + "\n\n");
-                //    //fs.Write(input, 0, input.Length);
+                // inserarea in file
+                try
+                {
+                    fs = new FileStream("..\\student.txt", FileMode.Truncate);
+                    byte[] input = Encoding.Default.GetBytes("L/T Alexandru Donici \n" + "Fisa personala:\n\n" + "Nume: " + numeStud + "\n" + "Clasa: " + clasa + "\n"
+                        + "Profil: " + profil + "\n\n");
+                    fs.Write(input, 0, input.Length);
 
-                //}
-                //finally
-                //{
-                //    fs.Close();
-                //}
+                }
+                finally
+                {
+                    fs.Close();
+                }
                   
                 if (realButton.Checked)
                 {

@@ -91,7 +91,7 @@ namespace Calculator_de_note
 
             try
             {
-                fs = new FileStream("student.txt", FileMode.Append);
+                fs = new FileStream("..\\student.txt", FileMode.Append);
                 byte[] input = Encoding.Default.GetBytes(
                     "Limba romana: " + lromGrade.Text + "\n" +
                     "Matematica: " + mathGrade.Text + "\n" +
@@ -103,7 +103,8 @@ namespace Calculator_de_note
                     "Chimia: " + chimiaGrade.Text + "\n" +
                     "Biologia: " + biologiaGrade.Text + "\n\n" +
                     "Nota medie: " + gradeText.Text + "\n\n" +
-                    "Data exportarii: " +  theDate + "\n");
+                    "Data: " +  theDate + "\n\n" +
+                    "Semnatura: __________________");
                 fs.Write(input, 0, input.Length);
                 MessageBox.Show("Ati exportat datele cu succces!");
 
@@ -163,7 +164,7 @@ namespace Calculator_de_note
                 cmd.ExecuteNonQuery();
                 connection.Close();
             }
-            MessageBox.Show("Datele au fost exportate cu succes");
+            MessageBox.Show("Datele au fost exportate cu succes!");
         }
     }
 }

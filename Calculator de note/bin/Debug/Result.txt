@@ -1,0 +1,33 @@
+L/T Alexandru Donici 
+Fisa personala: 
+
+
+numeElev: Busuioc Eduard
+profil: REAL
+romana: 10.00
+matematica: 10.00
+straina: 10.00
+istoria: 10.00
+fizica: 8.00
+biologia: 9.00
+chimia: 7.00
+informatica: 10.00
+geografia: 6.00
+
+notaMedie: 8.76000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data: 2022-05-16                                  Semnatura: __________________
+

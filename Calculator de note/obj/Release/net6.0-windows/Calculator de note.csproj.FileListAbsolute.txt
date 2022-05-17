@@ -18,3 +18,32 @@ C:\Users\manbl\source\repos\Calculator de note\Calculator de note\obj\Release\ne
 C:\Users\manbl\source\repos\Calculator de note\Calculator de note\obj\Release\net6.0-windows\ref\Calculator de note.dll
 C:\Users\manbl\source\repos\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.pdb
 C:\Users\manbl\source\repos\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.genruntimeconfig.cache
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\Calculator de note.exe
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\Calculator de note.deps.json
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\Calculator de note.runtimeconfig.json
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\Calculator de note.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\Calculator de note.pdb
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\bin\Release\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.csproj.AssemblyReference.cache
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator_de_note.chooseForm.resources
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator_de_note.Elev.resources
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator_de_note.ProfilRealForm.resources
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator_de_note.StartForm.resources
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator_de_note.ProfilUmanForm.resources
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator_de_note.Properties.Resources.resources
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.csproj.GenerateResource.cache
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.AssemblyInfoInputs.cache
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.AssemblyInfo.cs
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.csproj.CoreCompileInputs.cache
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.csproj.CopyComplete
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\refint\Calculator de note.dll
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.pdb
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\Calculator de note.genruntimeconfig.cache
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Release\net6.0-windows\ref\Calculator de note.dll

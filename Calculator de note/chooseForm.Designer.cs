@@ -137,9 +137,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(5, 266);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 25);
+            this.label4.Size = new System.Drawing.Size(219, 25);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Cread de Busuioc Eduard";
+            this.label4.Text = "Creat de Busuioc Eduard";
             // 
             // chooseForm
             // 
@@ -154,7 +154,7 @@
             this.Controls.Add(this.buttonProfesor);
             this.Controls.Add(this.buttonElev);
             this.Name = "chooseForm";
-            this.Text = "chooseForm";
+            this.Text = "Gradebook";
             this.passPanel.ResumeLayout(false);
             this.passPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

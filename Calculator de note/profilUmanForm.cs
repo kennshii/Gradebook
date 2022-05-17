@@ -14,7 +14,7 @@ namespace Calculator_de_note
     public partial class ProfilUmanForm : Form
     {
         string connectionString = "Server=.;Database=carnetNote;Trusted_Connection=True;";
-
+        
         public ProfilUmanForm()
         {
             InitializeComponent();
@@ -104,13 +104,14 @@ namespace Calculator_de_note
 
         private void exportButton_Click(object sender, EventArgs e)
         {
+
             // crearea unui filestream
             FileStream fs = null;
             string theDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             try
             {
                 //inserarea datelor
-                fs = new FileStream("student.txt", FileMode.Append);
+                fs = new FileStream("..\\student.txt", FileMode.Append);
                 byte[] input = Encoding.Default.GetBytes(
                     "Limba romana: " + lromGrade.Text + "\n" +
                     "Matematica: " + mathGrade.Text + "\n" +
@@ -121,8 +122,9 @@ namespace Calculator_de_note
                     "Biologia: " + biologiaGrade.Text + "\n" +
                     "Limba straina(2): " + lang2Grade.Text + "\n" +
                     "Educatia civica: " + biologiaGrade.Text + "\n\n" +
-                    "Nota medie: " + gradeText.Text + "\n\n" + 
-                    "Data exportarii: " +  theDate + "\n");
+                    "Nota medie: " + gradeText.Text + "\n\n" +
+                    "Data: " + theDate + "\n\n" +
+                    "Semnatura: __________________");
                 fs.Write(input, 0, input.Length);
                 MessageBox.Show("Ati exportat datele cu succces!");
                
@@ -189,6 +191,7 @@ namespace Calculator_de_note
                 connection.Close();
 
             }
+            MessageBox.Show("Datele au fost exportate cu succes!");
         }
     }
 }
