@@ -25,6 +25,7 @@ namespace Calculator_de_note
             InitializeComponent();
         }
 
+        // Butonul acceasa
         private void logButton_Click(object sender, EventArgs e)
         {
             numeStud = numeStudent.Text;
@@ -127,6 +128,15 @@ namespace Calculator_de_note
             chooseForm start = new chooseForm();
             this.Hide();
             start.ShowDialog();
+            this.Close();
+        }
+
+        //Butonul modifica
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            editDataBase dbForm = new editDataBase();
+            this.Hide();
+            dbForm.ShowDialog();
             this.Close();
         }
     }

@@ -17,6 +17,7 @@ namespace Calculator_de_note
             InitializeComponent();
         }
 
+        // buton profesor
         private void buttonProfesor_Click(object sender, EventArgs e)
         {
             passPanel.Visible = true;

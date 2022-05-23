@@ -36,16 +36,10 @@
             this.rbUman = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonSearchAll = new System.Windows.Forms.Button();
             this.buttonExport = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panelPassword = new System.Windows.Forms.Panel();
-            this.btnAcces = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pass = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelPassword.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -60,7 +54,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(69, 110);
+            this.button1.Location = new System.Drawing.Point(12, 110);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 1;
@@ -126,19 +120,9 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // buttonSearchAll
-            // 
-            this.buttonSearchAll.Location = new System.Drawing.Point(69, 145);
-            this.buttonSearchAll.Name = "buttonSearchAll";
-            this.buttonSearchAll.Size = new System.Drawing.Size(94, 29);
-            this.buttonSearchAll.TabIndex = 72;
-            this.buttonSearchAll.Text = "Toti elevii";
-            this.buttonSearchAll.UseVisualStyleBackColor = true;
-            this.buttonSearchAll.Click += new System.EventHandler(this.buttonSearchAll_Click);
-            // 
             // buttonExport
             // 
-            this.buttonExport.Location = new System.Drawing.Point(69, 180);
+            this.buttonExport.Location = new System.Drawing.Point(123, 110);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(94, 29);
             this.buttonExport.TabIndex = 73;
@@ -153,50 +137,11 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(214, 27);
             this.dateTimePicker1.TabIndex = 74;
             // 
-            // panelPassword
-            // 
-            this.panelPassword.Controls.Add(this.btnAcces);
-            this.panelPassword.Controls.Add(this.label3);
-            this.panelPassword.Controls.Add(this.pass);
-            this.panelPassword.Location = new System.Drawing.Point(12, 215);
-            this.panelPassword.Name = "panelPassword";
-            this.panelPassword.Size = new System.Drawing.Size(205, 92);
-            this.panelPassword.TabIndex = 75;
-            // 
-            // btnAcces
-            // 
-            this.btnAcces.Location = new System.Drawing.Point(89, 49);
-            this.btnAcces.Name = "btnAcces";
-            this.btnAcces.Size = new System.Drawing.Size(94, 29);
-            this.btnAcces.TabIndex = 73;
-            this.btnAcces.Text = "Acceseaza";
-            this.btnAcces.UseVisualStyleBackColor = true;
-            this.btnAcces.Click += new System.EventHandler(this.btnAcces_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Parola:";
-            // 
-            // pass
-            // 
-            this.pass.Location = new System.Drawing.Point(71, 16);
-            this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(125, 27);
-            this.pass.TabIndex = 0;
-            this.pass.UseSystemPasswordChar = true;
-            // 
             // Elev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelPassword);
-            this.Controls.Add(this.buttonSearchAll);
             this.Controls.Add(this.buttonExport);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
@@ -211,8 +156,6 @@
             this.Text = "Elev";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelPassword.ResumeLayout(false);
-            this.panelPassword.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,12 +171,7 @@
         private RadioButton rbUman;
         private Label label2;
         private PictureBox pictureBox1;
-        private Button buttonSearchAll;
         private Button buttonExport;
         private DateTimePicker dateTimePicker1;
-        private Panel panelPassword;
-        private Label label3;
-        private TextBox pass;
-        private Button btnAcces;
     }
 }

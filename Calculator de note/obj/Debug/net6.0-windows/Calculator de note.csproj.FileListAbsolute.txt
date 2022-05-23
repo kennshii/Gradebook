@@ -54,3 +54,4 @@ C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de
 C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Debug\net6.0-windows\ref\Calculator de note.dll
 C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Debug\net6.0-windows\Calculator_de_note.chooseForm.resources
 C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Debug\net6.0-windows\Calculator_de_note.Elev.resources
+C:\Users\manbl\OneDrive\Рабочий стол\Calculator de note\Calculator de note\obj\Debug\net6.0-windows\Calculator_de_note.editDataBase.resources

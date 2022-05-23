@@ -18,7 +18,6 @@ namespace Calculator_de_note
         public Elev()
         {
             InitializeComponent();
-            panelPassword.Visible = false;
         }
 
         // Search button
@@ -77,11 +76,6 @@ namespace Calculator_de_note
             this.Close();
         }
 
-        // show all
-        private void buttonSearchAll_Click(object sender, EventArgs e)
-        {
-            panelPassword.Visible = true;
-        }
 
         // password button
         private void buttonExport_Click(object sender, EventArgs e)
@@ -106,32 +100,6 @@ namespace Calculator_de_note
             string filePath = "..\\Result.txt";
             DataTableToTextFile(dt, filePath);
             MessageBox.Show("Datele au fost exportate in folderul cu aplicatia");
-        }
-        // access all data
-        private void btnAcces_Click(object sender, EventArgs e)
-        {
-            String passw = pass.Text;
-            if (passw.Equals("admin"))
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string selectAll = $"SELECT * from selectAll";
-
-                    SqlDataAdapter adapter = new SqlDataAdapter(selectAll, connection);
-
-                    DataTable dtbl = new DataTable();
-                    adapter.Fill(dtbl);
-
-                    dataGridView.DataSource = dtbl;
-                }
-                panelPassword.Visible = false;
-                pass.Text = "";
-            }
-            else
-            {
-                MessageBox.Show("Parola incorecta");
-            }
         }
 
         // Data table to text

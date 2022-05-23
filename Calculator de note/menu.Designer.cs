@@ -39,6 +39,7 @@
             this.umanButton = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,9 +97,9 @@
             // 
             // logButton
             // 
-            this.logButton.Location = new System.Drawing.Point(117, 199);
+            this.logButton.Location = new System.Drawing.Point(58, 199);
             this.logButton.Name = "logButton";
-            this.logButton.Size = new System.Drawing.Size(118, 42);
+            this.logButton.Size = new System.Drawing.Size(118, 51);
             this.logButton.TabIndex = 16;
             this.logButton.Text = "Accesează";
             this.logButton.UseVisualStyleBackColor = true;
@@ -147,12 +148,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(186, 199);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 51);
+            this.button1.TabIndex = 71;
+            this.button1.Text = "Modifica baza de date";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(378, 318);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.umanButton);
@@ -186,5 +198,6 @@
         private RadioButton umanButton;
         private Label label3;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }
